@@ -158,9 +158,10 @@ body {
 
 .homepage-wrapper {
   background-color: #f7f8fa;
-  font-family: proxima-nova;
+  font-family: Arial;
   min-height: 100vh;
 }
+/*proxima-nova*/
 
 .homepage-wrapper .homepage-container {
   flex-direction: column;
