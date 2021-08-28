@@ -10,8 +10,6 @@
 }
 
 .button:hover {
-  -webkit-box-shadow: 0 8px 25px -3px rgba(20, 45, 100, 0.15);
-  -moz-box-shadow: 0 8px 25px -3px rgba(20, 45, 100, 0.15);
   box-shadow: 0 8px 25px -3px rgba(20, 45, 100, 0.15);
 }
 
@@ -65,9 +63,6 @@
   text-align: center;
   position: relative;
   background-color: #fff;
-  -webkit-box-shadow: 0 45px 45px -20px rgba(25, 45, 100, 0.15);
-  -moz-box-shadow: 0 45px 45px -20px rgba(25, 45, 100, 0.15);
-  -ms-box-shadow: 0 45px 45px -20px rgba(25, 45, 100, 0.15);
   box-shadow: 0 45px 45px -20px rgba(25, 45, 100, 0.15);
 }
 
@@ -92,8 +87,6 @@
 }
 
 .main .flexitemWrap .flexitem .linkBusiness:hover {
-  -webkit-box-shadow: 0 8px 25px -3px rgba(20, 45, 100, 0.15);
-  -moz-box-shadow: 0 8px 25px -3px rgba(20, 45, 100, 0.15);
   box-shadow: 0 8px 25px -3px rgba(20, 45, 100, 0.15);
 }
 
@@ -112,8 +105,6 @@
 }
 
 .main .flexitemWrap .flexitem .linkDev:hover {
-  -webkit-box-shadow: 0 8px 25px -3px rgba(20, 45, 100, 0.15);
-  -moz-box-shadow: 0 8px 25px -3px rgba(20, 45, 100, 0.15);
   box-shadow: 0 8px 25px -3px rgba(20, 45, 100, 0.15);
 }
 
@@ -124,8 +115,6 @@
   padding: 5px 20px;
   border-radius: 25px;
   left: 50%;
-  -webkit-transform: translate(-50%, -15px);
-  -moz-transform: translate(-50%, -15px);
   transform: translate(-50%, -15px);
   background-color: #101e49;
   color: #fff;
