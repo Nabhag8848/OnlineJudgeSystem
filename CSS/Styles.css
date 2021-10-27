@@ -11,18 +11,18 @@
 
 .button:hover {
   box-shadow: 0 8px 25px -3px rgba(20, 45, 100, 0.15);
-  border: 0px;
+  border: 1px solid gray;
   font-weight: bold;
   color: #101e49;
 }
 
 .header {
-  padding: 35px 0; /*all sides*/
+  padding: 10px 0; /*all sides*/
 }
 
 .header .flex .logo {
-  height: 30px;
-  width: 155px;
+  height: 70px;
+  width: 300px;
 }
 
 .header .flex .logo img {
@@ -142,7 +142,7 @@ body {
 
 .homepage-wrapper {
   background-color: #f7f8fa;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Ubuntu;
   min-height: 100vh;
 }
 
