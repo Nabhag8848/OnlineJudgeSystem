@@ -1,0 +1,5 @@
+const squares = document.querySelector('.squares');
+for (let i = 1; i < 365; i++) {
+    const level = Math.floor(Math.random() * 3.5);
+    squares.insertAdjacentHTML('beforeend', `<li data-level="${level}"></li>`);
+}
