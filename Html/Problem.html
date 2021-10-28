@@ -19,4 +19,42 @@
     </nav>
 </header>
 <iframe src = "https://www.online-ide.com/xFBUeQcXRi"></iframe>
+<section class = "ProblemSet">
+    <h2 class = "ProblemHeader">Search in a Rotated Array</h2>
+    <ul class = "Difficulty">
+        <li>Difficulty:<strong> Medium</strong> </li>
+        <li>Accuracy: <strong> 35.5%</strong> </li>
+    </ul>
+    <hr class = "ProblemSections">
+    <p class = "ProblemStatement">There is an integer array nums sorted in ascending order (with distinct values).<br><br>
+        Prior to being passed to your function, nums is possibly rotated at an unknown pivot index k (1 <= k < nums.length)
+        such that the resulting array <br>
+        is [nums[k], nums[k+1], ..., nums[n-1], nums[0], nums[1], ..., nums[k-1]] (0-indexed). For example, [0,1,2,4,5,6,7]
+        might be rotated at pivot index 3 <br>
+        and become [4,5,6,7,0,1,2].<br><br>
+        Given the array nums after the possible rotation and an integer target, return the index of target if it is in nums,
+        or -1 if it is not in nums. <br><br>
+        You must write an algorithm with O(log n) Runtime Complexity.
+    </p>
+    <hr class = "ProblemSections">
+    <h4>Example:1</h4>
+    <div class = "Example">
+        <p><strong>Input </strong>: nums = [4,5,6,7,0,1,2], target = 0 </p>
+        <p><strong>Output</strong>: 4</p>
+    </div>
+    <h4>Example:2</h4>
+    <div class = "Example">
+        <p><strong>Input </strong>: nums = [4,5,6,7,0,1,2], target = 3</p>
+        <p><strong>Output</strong>: -1</p>
+    </div>
+    <h4>Constraints:</h4>
+    <ul class = "Constraints">
+        <li>1 <= nums.length <= 5000</li>
+        <li>-104 <= nums[i] <= 104</li>
+        <li>All values of nums are unique.</li>
+        <li>nums is an ascending array that is possibly rotated.</li>
+        <li>-104 <= target <= 104</li>
+    </ul>
+    <hr class = "ProblemSections">
+</section>
 </html>

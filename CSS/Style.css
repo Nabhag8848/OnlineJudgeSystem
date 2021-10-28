@@ -180,7 +180,7 @@ body{
     bottom: 80px;
     opacity: 0.2;
 }
-hr {
+#Dotted-hr{
     border-top:10px dotted slategrey;
     width:120px;
     margin-top:50px;
@@ -307,4 +307,42 @@ iframe {
     left:950px;
     margin-right:0px;
     margin-left:10px;
+}
+
+.ProblemSet{
+    position: absolute;
+    margin-top:50px;
+}
+.ProblemHeader{
+    font-size:25px;
+}
+.Difficulty li{
+    display: inline-block;
+    list-style-type: none;
+
+    font-size:18px;
+    padding:2px;
+    margin:-5px 50px 0px -40px;
+}
+.ProblemSections{
+    margin-left:-5px;
+    width:49.5vw;
+    border-top:2px solid slategrey;
+    margin-top:-15px;
+}
+
+.ProblemStatement{
+    font-family: FreeSans;
+    font-size:15px;
+}
+.Example{
+    background-color: #ededed;
+    padding:2px 0 2px 3px;
+    width:48vw;
+    margin-left:10px;
+    line-height: 5px;
+}
+.Constraints li {
+    margin-left:-10px;
+    padding-left:5px;
 }
