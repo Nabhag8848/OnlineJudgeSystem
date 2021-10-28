@@ -299,3 +299,12 @@ h4{
 .squares li[data-level="3"] {
     background-color: #101e49;
 }
+
+iframe {
+    height:100vh;
+    width:50vw;
+    position:fixed;
+    left:950px;
+    margin-right:0px;
+    margin-left:10px;
+}
