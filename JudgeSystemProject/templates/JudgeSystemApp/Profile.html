@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,19 +9,19 @@
 <header>
   <nav>
     <ul>
-      <li><a href = "/OnlineJudgeSystem/JudgeSystemProject/templates/JudgeSystemApp/main.html">Home</a></li>
-      <li><a href = "/OnlineJudgeSystem/JudgeSystemProject/templates/JudgeSystemApp/main.html">Explore</a></li>
+      <li><a href = "{% url 'main' %}">Home</a></li>
+      <li><a href = "{% url 'main' %}">Explore</a></li>
       <li><a href = "#">Practice</a></li>
       <li><a href = "#">Leaderboard</a></li>
       <li><a href = "#">Notification</a></li>
-      <li><a href = "/OnlineJudgeSystem/JudgeSystemProject/templates/JudgeSystemApp/Profile.html">Profile</a></li>
+      <li><a href = "{% url 'Profile' %}">Profile</a></li>
     </ul>
-    <img class = "headerPic" src = "/OnlineJudgeSystem/JudgeSystemProject/static/img/OnlineSystem.gif" alt = "AnimatedGif"/>
+    <img class = "headerPic" src = "{% static 'img/OnlineSystem.gif' %}" alt = "AnimatedGif"/>
   </nav>
 </header>
 <main>
     <section class = "ProfileSection">
-        <img class = "ProfilePic" src = "/OnlineJudgeSystem/JudgeSystemProject/static/img/Nabhag.jpeg" alt = "ProfilePic">
+        <img class = "ProfilePic" src = "{% static 'img/Nabhag.jpeg' %}" alt = "ProfilePic">
         <h2 class = "Details">Nabhag Motivaras</h2>
         <h3 class = "Details">@Nabhag8848</h3>
         <h4 class = "Details">India</h4>
@@ -53,9 +54,10 @@
             <li>Sat</li>
         </ul>
         <ul class="squares">
-            <script src = "/OnlineJudgeSystem/JudgeSystemProject/static/Graph.js"></script>
+            <script src = "{% static 'JS/Graph.js' %}"></script>
         </ul>
     </div>
 
 </main>
+
 </html>

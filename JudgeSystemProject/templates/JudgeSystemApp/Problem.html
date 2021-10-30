@@ -1,21 +1,22 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang = "en">
 <head>
     <meta charset="UTF-8">
     <title>Question</title>
-    <link rel = "stylesheet" href = "/OnlineJudgeSystem/JudgeSystemProject/static/Style.css">
+    <link rel = "stylesheet" href = "{% static 'CSS/Style.css' %}">
 </head>
 <header>
     <nav>
         <ul>
-            <li><a href = "/OnlineJudgeSystem/JudgeSystemProject/templates/JudgeSystemApp/main.html">Home</a></li>
-            <li><a href = "/OnlineJudgeSystem/JudgeSystemProject/templates/JudgeSystemApp/main.html">Explore</a></li>
+            <li><a href = "{% url 'main' %}">Home</a></li>
+            <li><a href = "{% url 'main' %}">Explore</a></li>
             <li><a href = "#">Practice</a></li>
             <li><a href = "#">Leaderboard</a></li>
             <li><a href = "#">Notification</a></li>
-            <li><a href = "/OnlineJudgeSystem/JudgeSystemProject/templates/JudgeSystemApp/">Profile</a></li>
+            <li><a href = "{% url 'Profile' %}">Profile</a></li>
         </ul>
-        <img class = "headerPic" src = "/OnlineJudgeSystem/JudgeSystemProject/static/img/OnlineSystem.gif" alt = "AnimatedGif"/>
+        <img class = "headerPic" src = "{% static 'img/OnlineSystem.gif' %}" alt = "AnimatedGif"/>
     </nav>
 </header>
 <iframe src = "https://www.online-ide.com/xFBUeQcXRi"></iframe>

@@ -15,7 +15,7 @@
                 <li><a href = "#">Practice</a></li>
                 <li><a href = "#">Leaderboard</a></li>
                 <li><a href = "#">Notification</a></li>
-                <li><a href = "/OnlineJudgeSystem/JudgeSystemProject/templates/JudgeSystemApp/Profile.html">Profile</a></li>
+                <li><a href = "{% url 'Profile' %}">Profile</a></li>
             </ul>
         <img class = "headerPic" src = "{% static 'img/OnlineSystem.gif' %}" alt = "AnimatedGif"/>
     </nav>
@@ -48,7 +48,7 @@
         <p class="boxtitle">Semester - 3</p>
         <h1 class="boxheader">Programming With Java</h1>
         <p class="topics">Variables,Control Constructs, Loops,Arrays,Pointers</p>
-        <div class="Btns"><a class="Btn" href="/OnlineJudgeSystem/JudgeSystemProject/templates/JudgeSystemApp/Problem.html">Start Learning</a></div>
+        <div class="Btns"><a class="Btn" href="{% url 'Problem' %}">Start Learning</a></div>
         <img class = "Boximg" src="{% static 'img/Java.png' %}" alt = "Java"/>
     </div>
 
