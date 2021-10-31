@@ -17,6 +17,9 @@ def Problem(request):
 def Profile(request):
     return render(request,"JudgeSystemApp/Profile.html")
 
+def questionsList(request):
+    return render(request,"JudgeSystemApp/questionsList.html")
+
 
 
 
