@@ -10,8 +10,12 @@
     <link rel="stylesheet" href="{% static 'CSS/questionsList.css' %}">
 </head>
 <body>
-    <div class="container">
-      
-    </div>
+    <h1>{{list }}</h1>
+    
+        <div class="container">
+            <h1>QUESTION NUMBER - {{ list }}</h1>
+            <a href="{% url 'Problem' list %}"> CLICK </a>
+        </div>
+    
 </body>
 </html>

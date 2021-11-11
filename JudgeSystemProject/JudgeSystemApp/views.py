@@ -12,13 +12,16 @@ def login_register(request):
     return render(request,"JudgeSystemApp/login_register.html")
 
 def Problem(request):
+    
     return render(request,"JudgeSystemApp/Problem.html")
 
 def Profile(request):
     return render(request,"JudgeSystemApp/Profile.html")
 
 def questionsList(request):
-    return render(request,"JudgeSystemApp/questionsList.html")
+    list = 10
+    
+    return render(request,"JudgeSystemApp/questionsList.html" , {'list':list})
 
 
 
