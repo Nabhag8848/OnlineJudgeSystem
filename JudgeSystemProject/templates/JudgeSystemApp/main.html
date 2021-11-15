@@ -11,9 +11,9 @@
     <nav>
         <ul>
                 <li><a href = "#">Home</a></li>
-                <li><a href = "#Explore">Explore</a></li>
-                <li><a href = "#">Practice</a></li>
-                <li><a href = "#">Leaderboard</a></li>
+                <li><a href = "{% url 'index' %}">Join</a></li>
+                <li><a href = "{% url 'questionsList' %}">Practice</a></li>
+                
                 <li><a href = "#">Notification</a></li>
                 <li><a href = "{% url 'Profile' %}">Profile</a></li>
             </ul>
@@ -32,7 +32,7 @@
         <p class="boxtitle">Semester - 1</p>
         <h1 class="boxheader">The Problem Solving Through C</h1>
         <p class="topics">Variables,Control Constructs, Loops,Arrays,Pointers</p>
-        <div class="Btns"><a class="Btn" href="">Start Learning</a></div>
+        <div class="Btns"><a class="Btn" href="{% url 'questionsList' %}">Start Learning</a></div>
         <img class="c-adjust" src="{% static 'img/C.png' %}" alt = "C"/>
     </div>
 
@@ -40,7 +40,7 @@
         <p class="boxtitle">Semester - 2</p>
         <h1 class="boxheader">OOP with C++</h1>
         <p class="topics">Variables,Control Constructs, Loops,Arrays,Pointers</p>
-        <div class="Btns"><a class="Btn" href="">Start Learning</a></div>
+        <div class="Btns"><a class="Btn" href="{% url 'questionsList' %}">Start Learning</a></div>
         <img class = "Boximg" src="{% static 'img/C++.png' %}" alt = "C++"/>
     </div>
 
@@ -56,7 +56,7 @@
         <p class="boxtitle">Semester - 4</p>
         <h1 class="boxheader">Python Programming</h1>
         <p class="topics">Variables,Control Constructs, Loops,Arrays,Pointers</p>
-        <div class="Btns"><a class="Btn" href="">Start Learning</a></div>
+        <div class="Btns"><a class="Btn" href="{% url 'questionsList' %}">Start Learning</a></div>
         <img class = "Boximg" src="{% static 'img/Python.png' %}" alt = "Python" />
     </div>
     <hr id = "Dotted-hr">

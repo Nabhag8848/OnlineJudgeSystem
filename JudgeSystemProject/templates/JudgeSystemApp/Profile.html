@@ -4,15 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Profile</title>
-  <link rel = "stylesheet" href = "/OnlineJudgeSystem/JudgeSystemProject/static/Style.css">
+  <link rel = "stylesheet" href = "{% static 'CSS/Style.css' %}">
 </head>
 <header>
   <nav>
     <ul>
       <li><a href = "{% url 'main' %}">Home</a></li>
       <li><a href = "{% url 'main' %}">Explore</a></li>
-      <li><a href = "#">Practice</a></li>
-      <li><a href = "#">Leaderboard</a></li>
+      <li><a href = "{% url 'questionsList' %}">Practice</a></li>
       <li><a href = "#">Notification</a></li>
       <li><a href = "{% url 'Profile' %}">Profile</a></li>
     </ul>
