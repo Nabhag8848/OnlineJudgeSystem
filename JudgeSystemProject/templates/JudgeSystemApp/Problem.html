@@ -6,13 +6,12 @@
     <title>Question</title>
     <link rel = "stylesheet" href = "{% static 'CSS/Style.css' %}">
 </head>
+
 <header>
     <nav>
         <ul>
             <li><a href = "{% url 'main' %}">Home</a></li>
             <li><a href = "{% url 'main' %}">Join</a></li>
-            <li><a href = "{% url 'questionsList' %}">Practice</a></li>
-            <li><a href = "#">Notification</a></li>
             <li><a href = "{% url 'Profile' %}">Profile</a></li>
         </ul>
         <img class = "headerPic" src = "{% static 'img/OnlineSystem.gif' %}" alt = "AnimatedGif"/>
@@ -20,9 +19,9 @@
 </header>
 <iframe src = "https://www.online-ide.com/xFBUeQcXRi"></iframe>
 <section class = "ProblemSet">
-    <h2 class = "ProblemHeader">Search in a Rotated Array</h2>
+    <h2 class = "ProblemHeader">{{lists.heading}}</h2>
     <ul class = "Difficulty">
-        <li>Difficulty:<strong> Medium</strong> </li>
+        <li>Difficulty:<strong> {{lists.difficulty}}</strong> </li>
         <li>Accuracy: <strong> 35.5%</strong> </li>
     </ul>
     <hr class = "ProblemSections">

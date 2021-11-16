@@ -3,6 +3,10 @@ from django.contrib.auth.forms import UserCreationForm
 # Create your views here.
 import array as arr
 
+from .models import CQuestions
+
+# from .models import CQuestions
+
 def main(request):
     return render(request,"JudgeSystemApp/main.html")
 
@@ -21,18 +25,31 @@ def register(request):
     context = {'form':form}
     return render(request,"JudgeSystemApp/register.html" , context)
 
-def Problem(request):
+def Problem(request ,lang, poll_id):
+    print(lang)
     
-    return render(request,"JudgeSystemApp/Problem.html")
+    lists = CQuestions.objects.get(heading = poll_id)
+    
+    list = {'lists': lists}
+    return render(request,"JudgeSystemApp/Problem.html" ,list)
 
 def Profile(request):
     return render(request,"JudgeSystemApp/Profile.html")
 
-def questionsList(request):
-  
-    lists = arr.array('i', [1, 2, 3 , 4,5,6,7,8,9,10])
+def questionsList(request,poll_id):
+    print(poll_id)
+    if poll_id == 'C':
+        print("c clicked")
+    elif poll_id == 'CPP':
+        print("cpp clicked")
+    elif poll_id == 'JAVA':
+        print("JAVA CLICKED")
+    elif poll_id == 'PYTHON':
+        print("python clicked")
+    lists = CQuestions.objects.all()
+    list = {'lists': lists , 'slug': poll_id}
     
-    return render(request,"JudgeSystemApp/questionsList.html" , {'lists':lists})
+    return render(request,"JudgeSystemApp/questionsList.html" , list )
 
 
 
