@@ -55,6 +55,9 @@ def questionsList(request,poll_id):
     
     return render(request,"JudgeSystemApp/questionsList.html" , list )
 
+def explore(request):
+    return render(request, "JudgeSystemApp/explore.html")
+
 
 
 

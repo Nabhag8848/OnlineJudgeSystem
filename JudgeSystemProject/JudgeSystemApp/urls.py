@@ -8,6 +8,7 @@ urlpatterns=[
     path('Profile/',views.Profile,name="Profile"),
     path('login/',views.login,name="login"),
     path('register/',views.register,name="register"),
+    path('explore/',views.explore,name= "explore"),
 
     path('questionsList/<str:poll_id>/',views.questionsList,name="questionsList"),
 
