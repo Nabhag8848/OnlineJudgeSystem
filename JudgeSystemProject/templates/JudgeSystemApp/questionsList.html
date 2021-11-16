@@ -12,7 +12,16 @@
 </head>
 
 <body>
- 
+  <div class="card" style="margin: 20px;">
+      <div class="card-body">
+      <h4>PRACTICE --> <strong>{{lang}}</strong></h4>
+      <a href="{% url 'main'  %}" class="btn btn-primary" style="background-color: #101e49;"> GO BACK </a>
+      
+      
+       
+    </div>
+  </div>
+   <h2 style="margin: 20px; padding: 20px; text-align: center;">PRACTICAL QUESTIONS</h2>
     {% for list in lists %}
     <div class="card" style="margin: 20px;">
         <div class="card-header">

@@ -39,15 +39,19 @@ def Profile(request):
 def questionsList(request,poll_id):
     print(poll_id)
     if poll_id == 'C':
+        lang = 'C'
         print("c clicked")
     elif poll_id == 'CPP':
+        lang = 'C++'
         print("cpp clicked")
     elif poll_id == 'JAVA':
+        lang = 'JAVA'
         print("JAVA CLICKED")
     elif poll_id == 'PYTHON':
+        lang = 'PYTHON'
         print("python clicked")
     lists = CQuestions.objects.all()
-    list = {'lists': lists , 'slug': poll_id}
+    list = {'lists': lists , 'slug': poll_id , 'lang':lang}
     
     return render(request,"JudgeSystemApp/questionsList.html" , list )
 
