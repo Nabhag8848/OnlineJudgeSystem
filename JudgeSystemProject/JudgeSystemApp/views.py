@@ -3,7 +3,7 @@ from django.contrib.auth.forms import UserCreationForm
 # Create your views here.
 import array as arr
 
-from .models import CQuestions
+from .models import CPPQuestions, CQuestions, JAVAQuestions, PYTHONQuestions
 
 # from .models import CQuestions
 
@@ -26,9 +26,22 @@ def register(request):
     return render(request,"JudgeSystemApp/register.html" , context)
 
 def Problem(request ,lang, poll_id):
-    print(lang)
+    if lang == 'C':
+        lists = CQuestions.objects.get(heading = poll_id)
+        
+                
+    elif lang == 'CPP':
+        lists = CPPQuestions.objects.get(heading = poll_id)
+
+
+    elif lang == 'JAVA':
+        lists = JAVAQuestions.objects.get(heading = poll_id)
+
+
+    elif lang == 'PYTHON':
+        lists = PYTHONQuestions.objects.get(heading = poll_id)
+       
     
-    lists = CQuestions.objects.get(heading = poll_id)
     
     list = {'lists': lists}
     return render(request,"JudgeSystemApp/Problem.html" ,list)
@@ -40,17 +53,21 @@ def questionsList(request,poll_id):
     print(poll_id)
     if poll_id == 'C':
         lang = 'C'
-        print("c clicked")
+        lists = CQuestions.objects.all()
+        
     elif poll_id == 'CPP':
-        lang = 'C++'
-        print("cpp clicked")
+        lang = 'CPP'
+        lists = CPPQuestions.objects.all()
+
     elif poll_id == 'JAVA':
         lang = 'JAVA'
-        print("JAVA CLICKED")
+        lists = JAVAQuestions.objects.all()
+
     elif poll_id == 'PYTHON':
         lang = 'PYTHON'
-        print("python clicked")
-    lists = CQuestions.objects.all()
+        lists = PYTHONQuestions.objects.all()
+        
+    
     list = {'lists': lists , 'slug': poll_id , 'lang':lang}
     
     return render(request,"JudgeSystemApp/questionsList.html" , list )

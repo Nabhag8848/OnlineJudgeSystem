@@ -25,7 +25,7 @@
     {% for list in lists %}
     <div class="card" style="margin: 20px;">
         <div class="card-header">
-          <h4><strong>{{list.heading}}</strong></h4>
+          <h4><strong>{{list.heading|title}}</strong></h4>
         </div>
         <div class="card-body">
           <h5 class="card-title">{{list.difficulty}}</h5>
